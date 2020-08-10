@@ -1,0 +1,282 @@
+body{
+    font-family: 'Nunito Sans';
+    box-sizing: border-box;
+}
+
+#row{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#sidebar {
+    flex : 20%;
+    //background-color: aqua;
+}
+
+
+#userbar{
+    position: sticky;
+    top: 0;
+    clear: both;
+    content: "";
+    padding-top: 18px;
+    padding-bottom: 20px;
+    z-index: 10;
+    border-bottom: 1px solid #dcdcdc;
+    display: table;
+    width: 100%;
+    background-color: white;
+    img{
+        float: right;
+        height: 50px;
+        margin-right: 10px;
+        width: 50px;
+        border-radius: 5px;
+    }
+    .trdown{
+        float: right;
+        width: 0;
+        margin-right: 10px;
+        margin-top: 20px;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 10px solid #555;
+    }
+    
+}
+
+#logoutbtn{
+    float:right;
+    border: 1px solid #dcdcdc;
+    background-color: white;
+    padding: 10px;
+    margin-right: 20px;
+    color: blue;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#main{
+    flex : 80%;
+    background-color: whitesmoke;
+    //padding: 20px;
+    //margin : 10px;
+
+    
+
+    .referalTitle{
+        color: #000015;
+        margin-left: 20px;
+        margin-top: 20px;
+        width: 200px;
+    }
+     
+    .referTable{
+        table{
+            margin-left: 20px;
+            border-collapse: collapse;
+            width: 90%;
+            th{
+                padding: 10px;
+                background-color: #F2F2F2;
+                border-top: 1px solid #dcdcdc;
+                border-bottom: 1px solid #dcdcdc;
+            }
+            td{
+                padding: 20px;
+                text-align: center;
+                border-bottom: 1px solid #dcdcdc;
+            }
+        }
+        
+    }
+    
+
+    .dash{
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 9px;
+        padding: 20px;
+    }
+
+    .rows{
+        &::after{
+            content: "";
+        clear: both;
+        display: table;
+        }
+        
+    }
+
+    .col{
+        position: relative;
+        float: left;
+        width: 45%;
+        height: auto;
+        background-color: white;
+        border-radius:10px;
+        margin-left:20px;
+        margin-bottom: 40px;
+    }
+
+    .cardrow{
+        padding: 20px;
+        &::after{
+            content: "";
+        clear: both;
+        display: table;
+        }
+    }
+
+    .cardcol{
+        position: relative;
+        float: left;
+        width: 30%;
+        height: auto;
+        background-color: white;
+        border-radius:10px;
+        margin-left:20px;
+        margin-bottom: 40px;
+    }
+
+    .cardcontent{
+        //align-content: center;
+        //align-items: center;
+        align-self: center;
+        margin-left: 120px;
+        img{
+            height: 80px;
+            margin-left: 50px;
+        }
+    }
+
+    .colrefer{
+        position: relative;
+        float: left;
+        width: 90%;
+        height: auto;
+        background-color: white;
+        padding: 10px;
+        border-radius:10px;
+        margin-left:20px;
+        margin-bottom: 40px;
+    }
+
+    .content{
+        
+        
+        .boxname{
+            color: #000015;
+            margin-left: 20px;
+            margin-top: 20px;
+            width: 200px;
+            
+        }
+        .boxamount{
+            color: #127DE2;
+            position: absolute;
+            top: 0px;
+            right: 20px;
+        }
+
+        .boxamountFeedback{
+            color: #19A94F;
+            position: absolute;
+            top: 0px;
+            right: 20px;
+        }
+
+        .boxamountNewOrder{
+            color: #F30028;
+            position: absolute;
+            top: 0px;
+            right: 20px;
+        }
+
+        .boxamountNewUser{
+            color: #CBD3CF;
+            position: absolute;
+            top: 0px;
+            right: 20px;
+        }
+
+        .progressbar{
+            width: 85%;
+            border: 1px solid #dcdcdc;
+            border-radius: 10px;
+            margin-left: 20px;
+            margin-top: 20px;
+            .progresspercent{
+                width: 50%;
+                background-color:#127DE2;    
+                height: 20px;
+                border-radius: 10px;
+                border: 1px solid #dcdcdc;
+            }
+            .progresspercentFeedback{
+                width: 89%;
+                background-color:#19A94F;    
+                height: 20px;
+                border-radius: 10px;
+                border: 1px solid #dcdcdc;
+            }
+            .progresspercentNewOrder{
+                width: 55%;
+                background-color:#F30028;    
+                height: 20px;
+                border-radius: 10px;
+                border: 1px solid #dcdcdc;
+            }
+            .progresspercentNewUser{
+                width: 77%;
+                background-color:#CBD3CF;    
+                height: 20px;
+                border-radius: 10px;
+                border: 1px solid #dcdcdc;
+            }
+        }
+
+        .change{
+            color: #555;
+            margin-left: 20px;
+            //margin-top:10px;
+
+        }
+
+        .displaypercent{
+            color: #555;
+            position: absolute;
+            bottom: 0px;
+            right: 20px;
+        }   
+
+    }
+}
+
+
+
+
+
+#sidelogo{
+    background-color: #000015;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+}
+
+.sidebarlist{
+    padding: 20px;
+    width: 100%;
+    background-color : white;
+    height: 60px;
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    &:hover{
+        background-color:#ebffff;
+    }
+}
+

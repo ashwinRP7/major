@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Login Page
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Nunito Sans' rel='stylesheet'>
+        
+        <link rel="stylesheet" href="css/login.css">
+    </head>
+    <body>
+        <img src="/home/ashwin/Downloads/1RP/major/images/rp-logo.png" style="position:relative;left : 30px; top : 30px;">
+        <div class="logininfo">
+            <h1>WELCOME TO REDPANDA UI HTML - CSS BASIC</h1>
+            <h1>FED TEMPLATE</h1>
+            <h4>The Red Pandas is a team of pragmatic engineers who care deeply about quality of their products and the success of their partners. Over the years we have mastered best practices in building software products from concept to scale and we continue to learn emerging technologies.</h4>            
+        </div>
+        <div class="login">
+            
+            <form id="loginformid" onsubmit="rememberMe()" >
+                <h2>PLEASE LOG IN </h2>
+                Username<br>
+                <input type="email" name = "useremail" id="inputemail" size = "30" placeholder="Email or Username" maxlength="30" required><br><br>
+                Password<br>
+                <input type="password" name="userpass" size="30" id = "inputpass" placeholder="Password" minlength="8" required><br><br>
+                <input type="checkbox" id="logincheckbox" name="rememberme">
+                <label for="logincheckbox">Remember me</label><br><br>
+                <input type="submit" name="loginbtn" value="Login">
+            </form>
+        </div>
+        <script src="login.js"></script>
+    </body>
+</html>

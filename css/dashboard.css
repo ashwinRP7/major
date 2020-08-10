@@ -1,0 +1,281 @@
+body {
+  font-family: 'Nunito Sans';
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#sidebar {
+  -webkit-box-flex: 20%;
+      -ms-flex: 20%;
+          flex: 20%;
+}
+
+#userbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  clear: both;
+  content: "";
+  padding-top: 18px;
+  padding-bottom: 20px;
+  z-index: 10;
+  border-bottom: 1px solid #dcdcdc;
+  display: table;
+  width: 100%;
+  background-color: white;
+}
+
+#userbar img {
+  float: right;
+  height: 50px;
+  margin-right: 10px;
+  width: 50px;
+  border-radius: 5px;
+}
+
+#userbar .trdown {
+  float: right;
+  width: 0;
+  margin-right: 10px;
+  margin-top: 20px;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #555;
+}
+
+#logoutbtn {
+  float: right;
+  border: 1px solid #dcdcdc;
+  background-color: white;
+  padding: 10px;
+  margin-right: 20px;
+  color: blue;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#main {
+  -webkit-box-flex: 80%;
+      -ms-flex: 80%;
+          flex: 80%;
+  background-color: whitesmoke;
+}
+
+#main .referalTitle {
+  color: #000015;
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 200px;
+}
+
+#main .referTable table {
+  margin-left: 20px;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+#main .referTable table th {
+  padding: 10px;
+  background-color: #F2F2F2;
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+#main .referTable table td {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+#main .dash {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 9px;
+  padding: 20px;
+}
+
+#main .rows::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#main .col {
+  position: relative;
+  float: left;
+  width: 45%;
+  height: auto;
+  background-color: white;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+
+#main .cardrow {
+  padding: 20px;
+}
+
+#main .cardrow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#main .cardcol {
+  position: relative;
+  float: left;
+  width: 30%;
+  height: auto;
+  background-color: white;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+
+#main .cardcontent {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 120px;
+}
+
+#main .cardcontent img {
+  height: 80px;
+  margin-left: 50px;
+}
+
+#main .colrefer {
+  position: relative;
+  float: left;
+  width: 90%;
+  height: auto;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+
+#main .content .boxname {
+  color: #000015;
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 200px;
+}
+
+#main .content .boxamount {
+  color: #127DE2;
+  position: absolute;
+  top: 0px;
+  right: 20px;
+}
+
+#main .content .boxamountFeedback {
+  color: #19A94F;
+  position: absolute;
+  top: 0px;
+  right: 20px;
+}
+
+#main .content .boxamountNewOrder {
+  color: #F30028;
+  position: absolute;
+  top: 0px;
+  right: 20px;
+}
+
+#main .content .boxamountNewUser {
+  color: #CBD3CF;
+  position: absolute;
+  top: 0px;
+  right: 20px;
+}
+
+#main .content .progressbar {
+  width: 85%;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+#main .content .progressbar .progresspercent {
+  width: 50%;
+  background-color: #127DE2;
+  height: 20px;
+  border-radius: 10px;
+  border: 1px solid #dcdcdc;
+}
+
+#main .content .progressbar .progresspercentFeedback {
+  width: 89%;
+  background-color: #19A94F;
+  height: 20px;
+  border-radius: 10px;
+  border: 1px solid #dcdcdc;
+}
+
+#main .content .progressbar .progresspercentNewOrder {
+  width: 55%;
+  background-color: #F30028;
+  height: 20px;
+  border-radius: 10px;
+  border: 1px solid #dcdcdc;
+}
+
+#main .content .progressbar .progresspercentNewUser {
+  width: 77%;
+  background-color: #CBD3CF;
+  height: 20px;
+  border-radius: 10px;
+  border: 1px solid #dcdcdc;
+}
+
+#main .content .change {
+  color: #555;
+  margin-left: 20px;
+}
+
+#main .content .displaypercent {
+  color: #555;
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+}
+
+#sidelogo {
+  background-color: #000015;
+  padding: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.sidebarlist {
+  padding: 20px;
+  width: 100%;
+  background-color: white;
+  height: 60px;
+}
+
+.sidebarlist a {
+  text-decoration: none;
+  color: black;
+}
+
+.sidebarlist:hover {
+  background-color: #ebffff;
+}
+/*# sourceMappingURL=dashboard.css.map */

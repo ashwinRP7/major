@@ -1,0 +1,155 @@
+body {
+  font-family: 'Nunito Sans';
+}
+
+#userbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  clear: both;
+  content: "";
+  padding-top: 18px;
+  z-index: 10;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dcdcdc;
+  display: table;
+  width: 100%;
+  background-color: white;
+}
+
+#userbar img {
+  float: right;
+  height: 50px;
+  margin-right: 10px;
+  width: 50px;
+  border-radius: 5px;
+}
+
+#userbar .trdown {
+  float: right;
+  width: 0;
+  margin-right: 10px;
+  margin-top: 20px;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #555;
+}
+
+#logoutbtn {
+  float: right;
+  border: 1px solid #dcdcdc;
+  background-color: white;
+  padding: 10px;
+  margin-right: 20px;
+  color: blue;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#sidebar {
+  -webkit-box-flex: 20%;
+      -ms-flex: 20%;
+          flex: 20%;
+}
+
+#main {
+  -webkit-box-flex: 70%;
+      -ms-flex: 70%;
+          flex: 70%;
+  background-color: whitesmoke;
+}
+
+#sidelogo {
+  background-color: #000015;
+  padding: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.sidebarlist {
+  padding: 20px;
+  width: 100%;
+  background-color: white;
+  height: 60px;
+}
+
+.sidebarlist a {
+  text-decoration: none;
+  color: black;
+}
+
+.sidebarlist:hover {
+  background-color: #ebffff;
+}
+
+#listCatalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 10px;
+}
+
+#listCatalog .card {
+  background-color: white;
+  width: auto;
+  height: auto;
+  padding: 20px;
+  margin: 5px;
+  border: 1px solid 	#DCDCDC;
+  border-radius: 4px;
+  -webkit-box-shadow: 6px 6px 4px #DCDCDC;
+          box-shadow: 6px 6px 4px #DCDCDC;
+  position: relative;
+}
+
+#listCatalog .newitem {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 50px;
+  background-color: red;
+}
+
+#listCatalog .newitem p {
+  padding: 5px;
+  color: white;
+}
+
+#listCatalog .info {
+  padding: 5px;
+  position: relative;
+}
+
+#listCatalog .info1 {
+  position: absolute;
+  left: 5px;
+}
+
+#listCatalog .info2 {
+  position: absolute;
+  right: 5px;
+}
+
+#listCatalog .sizediv {
+  position: absolute;
+  top: 75px;
+}
+
+#listCatalog .boxit {
+  border: 1px solid #DCDCDC;
+  border-radius: 4px;
+  margin: 15px;
+}
+/*# sourceMappingURL=cataloglist.css.map */
