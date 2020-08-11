@@ -74,12 +74,12 @@ body {
   color: #000015;
   margin-left: 20px;
   margin-top: 20px;
-  width: 200px;
 }
 
 #main .referTable table {
   margin-left: 20px;
   border-collapse: collapse;
+  overflow-x: auto;
   width: 90%;
 }
 
@@ -165,6 +165,7 @@ body {
   padding: 10px;
   border-radius: 10px;
   margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 40px;
 }
 
@@ -172,7 +173,6 @@ body {
   color: #000015;
   margin-left: 20px;
   margin-top: 20px;
-  width: 200px;
 }
 
 #main .content .boxamount {
@@ -264,10 +264,12 @@ body {
 }
 
 .sidebarlist {
+  border-bottom: 1px solid #dcdcdc;
   padding: 20px;
   width: 100%;
   background-color: white;
   height: 60px;
+  border-bottom: 1px solid #dcdcdc;
 }
 
 .sidebarlist a {
@@ -277,5 +279,96 @@ body {
 
 .sidebarlist:hover {
   background-color: #ebffff;
+}
+
+.sidebarlist img {
+  height: 50px;
+  width: 50px;
+  float: right;
+  margin-right: 25px;
+}
+
+@media (max-width: 600px) {
+  #main {
+    width: 100%;
+    padding: 0px;
+  }
+  #main .col {
+    width: 80%;
+  }
+  #main .referTable {
+    overflow-x: auto;
+  }
+  #main .referTable table {
+    width: 10%;
+    margin-left: 5px;
+  }
+  #main .referTable table th {
+    padding: 2px;
+  }
+  #main .referTable table td {
+    padding: 2px;
+  }
+  #main .cardcol {
+    width: 80%;
+  }
+  #userbar .trdown {
+    display: none;
+  }
+  #userbar img {
+    float: left;
+  }
+  #logoutbtn {
+    float: left;
+  }
+  .sidebarlist {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 411px) {
+  #main {
+    width: 100%;
+    padding: 0px;
+  }
+  #main .col {
+    width: 80%;
+  }
+  #main .referTable {
+    overflow-x: auto;
+  }
+  #main .referTable table {
+    width: 10%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  #main .referTable table th {
+    padding: 20px;
+  }
+  #main .referTable table td {
+    padding: 20px;
+  }
+  #main .cardcol {
+    width: 80%;
+  }
+  #main .cardcontent {
+    margin-left: 80px;
+  }
+  #main .cardcontent img {
+    height: 80px;
+    margin-left: 20px;
+  }
+  #userbar .trdown {
+    display: none;
+  }
+  #userbar img {
+    float: left;
+  }
+  #logoutbtn {
+    float: left;
+  }
+  .sidebarlist {
+    padding: 0px;
+  }
 }
 /*# sourceMappingURL=dashboard.css.map */

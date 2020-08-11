@@ -69,3 +69,28 @@ input[type = "password"]{
         align-content: center;
     }
 }
+
+@media (max-width:411px){
+    .login{
+        top:20px;
+        height: 40%;
+        padding: 0px;
+        left: 20px;
+        width: 330px;
+    }
+    .logininfo{
+        h1{
+            font-size: 20px;
+        }
+
+    }
+    #loginformid{
+        padding: 10px;
+        input[type = "email"]{
+            width: 90%;
+        }
+        input[type="password"]{
+            width: 90%;
+        }
+    }
+}
