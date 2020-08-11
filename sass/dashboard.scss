@@ -156,6 +156,21 @@ body{
         border-radius:10px;
         margin-left:20px;
         margin-bottom: 40px;
+        .ptag{
+            border-radius: 10px;
+            height: 43px;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+            position: absolute;
+            right: -8px;
+            top: 5px;
+            background-color: #64E1A2;
+            color: white;
+            div{
+                text-align: center;
+            }
+        }
     }
 
     .cardcontent{
@@ -166,6 +181,118 @@ body{
         img{
             height: 80px;
             margin-left: 50px;
+        }
+    }
+
+    .teamrow{
+        padding: 20px;
+        &::after{
+            content: "";
+        clear: both;
+        display: table;
+        }
+    }
+
+    .teamcol{
+        position: relative;
+        float: left;
+        width: 22%;
+        height: auto;
+        background-color: white;
+        border-radius:10px;
+        margin-left:20px;
+        margin-bottom: 40px;
+    }
+    .teamcontent{
+        padding: 20px;
+        align-self: center;
+        div{
+            p{
+                text-align: center;
+            }
+        }
+        .teamcircles{
+            &::after{
+                content: "";
+            clear: both;
+            display: table;
+            position: relative;
+            }    
+            .blue{
+                position: absolute;
+                z-index: 10;
+                right: 10px;
+                box-sizing: border-box;
+                float: right;
+                width: 50px;
+                height: 50px;
+                border-radius: 25px;
+                background-color: #11C7EB;
+                color: white;
+                div{
+                    padding: 13px;
+                }
+            }
+            .orange{
+                box-sizing: border-box;
+                z-index: 9;
+                float: right;
+                position: absolute;
+                right: 50px;
+                width: 50px;
+                height: 50px;
+                border-radius: 25px;
+                background-color: #FECB38;
+                color: white;
+                div{
+                    padding: 13px;
+                }
+            }
+            .purple{
+                z-index: 8;
+                box-sizing: border-box;
+                float: right;
+                position: absolute;
+                right: 90px;
+                width: 50px;
+                height: 50px;
+                border-radius: 25px;
+                background-color: #DD77FB;
+                color: white;
+                div{
+                    padding: 13px;
+                }
+            }
+            .green{
+                z-index: 7;
+                box-sizing: border-box;
+                width: 50px;    
+                height: 50px;
+                position: absolute;
+                right: 130px;
+                border-radius: 25px;
+                float: right;
+                background-color: #42E6CD;
+                color: white;
+                div{
+                    padding: 13px;
+                }
+            }
+            .hideme{
+                z-index: -1;
+                box-sizing: border-box;
+                width: 50px;    
+                height: 50px;
+                
+                visibility: hidden;
+                border-radius: 25px;
+                float: right;
+                background-color: white;
+                color: white;
+                div{
+                    padding: 13px;
+                }
+            }
         }
     }
 
@@ -314,6 +441,10 @@ body{
             width: 80%;
         }
 
+        .teamcol{
+            width: 80%;
+        }
+
         .referTable{
             overflow-x:auto;
             table{
@@ -322,10 +453,10 @@ body{
                 margin-left: 5px;
                 //display: none;
                 th{
-                    padding:2px;
+                    padding:20px;
                 }
                 td{
-                    padding: 2px;
+                    padding: 20px;
                 }
             }
         }
@@ -360,6 +491,10 @@ body{
         width: 100%;
         padding: 0px;
         .col{
+            width: 80%;
+        }
+
+        .teamcol{
             width: 80%;
         }
 
@@ -410,4 +545,6 @@ body{
     .sidebarlist{
         padding: 0px;
     }
+
+    
 }

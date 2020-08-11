@@ -161,6 +161,23 @@ body {
   margin-bottom: 40px;
 }
 
+#main .cardcol .ptag {
+  border-radius: 10px;
+  height: 43px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  position: absolute;
+  right: -8px;
+  top: 5px;
+  background-color: #64E1A2;
+  color: white;
+}
+
+#main .cardcol .ptag div {
+  text-align: center;
+}
+
 #main .cardcontent {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -171,6 +188,134 @@ body {
 #main .cardcontent img {
   height: 80px;
   margin-left: 50px;
+}
+
+#main .teamrow {
+  padding: 20px;
+}
+
+#main .teamrow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#main .teamcol {
+  position: relative;
+  float: left;
+  width: 22%;
+  height: auto;
+  background-color: white;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+
+#main .teamcontent {
+  padding: 20px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#main .teamcontent div p {
+  text-align: center;
+}
+
+#main .teamcontent .teamcircles::after {
+  content: "";
+  clear: both;
+  display: table;
+  position: relative;
+}
+
+#main .teamcontent .teamcircles .blue {
+  position: absolute;
+  z-index: 10;
+  right: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  float: right;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #11C7EB;
+  color: white;
+}
+
+#main .teamcontent .teamcircles .blue div {
+  padding: 13px;
+}
+
+#main .teamcontent .teamcircles .orange {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 9;
+  float: right;
+  position: absolute;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #FECB38;
+  color: white;
+}
+
+#main .teamcontent .teamcircles .orange div {
+  padding: 13px;
+}
+
+#main .teamcontent .teamcircles .purple {
+  z-index: 8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  float: right;
+  position: absolute;
+  right: 90px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #DD77FB;
+  color: white;
+}
+
+#main .teamcontent .teamcircles .purple div {
+  padding: 13px;
+}
+
+#main .teamcontent .teamcircles .green {
+  z-index: 7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 130px;
+  border-radius: 25px;
+  float: right;
+  background-color: #42E6CD;
+  color: white;
+}
+
+#main .teamcontent .teamcircles .green div {
+  padding: 13px;
+}
+
+#main .teamcontent .teamcircles .hideme {
+  z-index: -1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  visibility: hidden;
+  border-radius: 25px;
+  float: right;
+  background-color: white;
+  color: white;
+}
+
+#main .teamcontent .teamcircles .hideme div {
+  padding: 13px;
 }
 
 #main .colrefer {
@@ -313,6 +458,9 @@ body {
   #main .col {
     width: 80%;
   }
+  #main .teamcol {
+    width: 80%;
+  }
   #main .referTable {
     overflow-x: auto;
   }
@@ -321,10 +469,10 @@ body {
     margin-left: 5px;
   }
   #main .referTable table th {
-    padding: 2px;
+    padding: 20px;
   }
   #main .referTable table td {
-    padding: 2px;
+    padding: 20px;
   }
   #main .cardcol {
     width: 80%;
@@ -349,6 +497,9 @@ body {
     padding: 0px;
   }
   #main .col {
+    width: 80%;
+  }
+  #main .teamcol {
     width: 80%;
   }
   #main .referTable {
